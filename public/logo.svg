@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <circle cx="24" cy="24" r="22" fill="#0B132B" stroke="#1E293B" stroke-width="2"/>
+  <!-- Radar circles -->
+  <circle cx="24" cy="24" r="16" stroke="#334155" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="24" cy="24" r="10" stroke="#475569" stroke-width="1.2"/>
+  <!-- Connecting nodes -->
+  <path d="M14 24L24 14L34 24L24 34Z" stroke="url(#brandGrad)" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
+  <!-- Pulsing nodes -->
+  <circle cx="14" cy="24" r="3.5" fill="#38BDF8" filter="url(#glow)"/>
+  <circle cx="24" cy="14" r="3.5" fill="#6366F1" filter="url(#glow)"/>
+  <circle cx="34" cy="24" r="3.5" fill="#A855F7" filter="url(#glow)"/>
+  <circle cx="24" cy="34" r="3.5" fill="#06B6D4" filter="url(#glow)"/>
+  <!-- Central pulse -->
+  <circle cx="24" cy="24" r="4" fill="url(#brandGrad)"/>
+</svg>
